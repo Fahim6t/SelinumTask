@@ -78,16 +78,13 @@ public class ElementLocator {
 	  driver.findElement(verify).sendKeys(num);
   } 
   
-	
-
 
   public void clickSubmit() throws Exception{
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	  driver.findElement(submit).click();
 	  
   }
-  
-  
+    
   public ElementLocator(WebDriver driver) {
 		this.driver = driver;
 	}
