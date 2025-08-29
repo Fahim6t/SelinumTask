@@ -3,13 +3,12 @@ package pages;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
-//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class LocateElements {
+public class ElementLocator {
 	
   WebDriver driver;
  
@@ -81,7 +80,7 @@ public class LocateElements {
   }
   
   
-  public LocateElements(WebDriver driver) {
+  public ElementLocator(WebDriver driver) {
 		this.driver = driver;
 	}
  

@@ -1,20 +1,17 @@
 package task;
 
 import java.io.FileReader;
-import java.time.Duration;
 import java.util.Properties;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
-import pages.LocateElements;
+import pages.ElementLocator;
 
 
 
-public class VinothReg {
+public class TaskRunner {
 	WebDriver driver = null;
 	@Test
 	public void run() throws Exception {
@@ -40,7 +37,7 @@ public class VinothReg {
 			 
 			String title = driver.getTitle();
 			System.out.println("Title: "+title);
-			LocateElements element = new LocateElements(driver);
+			ElementLocator element = new ElementLocator(driver);
 			
 			
 			
