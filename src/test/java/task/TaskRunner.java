@@ -15,9 +15,6 @@ public class TaskRunner {
 	WebDriver driver = null;
 	@Test
 	public void run() throws Exception {
-		
-		
-		   
 			driver = new ChromeDriver();
 			FileReader fr = new FileReader("C:\\Users\\fahim.i\\eclipse-mavendemo\\VinothTest\\inputdata\\data.properties");
 			Properties p = new Properties();
@@ -43,9 +40,8 @@ public class TaskRunner {
 			
 			element.enterFirstName(p.getProperty("firstname"));
 			element.enterLastName(p.getProperty("lastname"));
-			
-			
 			element.selectGender();
+			element.selectCourse();
 			
 			
 			element.selectCountry(p.getProperty("country"));
